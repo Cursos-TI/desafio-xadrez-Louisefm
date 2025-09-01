@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+int main(){
     // Nível Novato - Movimentação das Peças
 
     printf("Desafio de Xadrez - MateCheck\n");
