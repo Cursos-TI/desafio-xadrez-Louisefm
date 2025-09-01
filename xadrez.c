@@ -1,13 +1,15 @@
 #include <stdio.h>
 
 int main() {
-    // Nível Novato - Movimentação das Peças
+    
     int i = 0;
     int j = 0;
 
     printf("Desafio de Xadrez - MateCheck\n");
     printf("\n");
 
+    // Nível Novato - Movimentação das Peças
+    
     // Implementação de Movimentação do Bispo com Do-While
     printf("Movimento do Bispo\n");
     // Movendo o Bispo 05 casas na diagonal para direita
@@ -37,8 +39,18 @@ int main() {
     printf("\n");   
 
     // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+    printf("Movimento do Cavalo\n");
+    // Movendo o Cavalo 02 casas para baixo e 01 casa para esquerda
+
+        int movimento = 1; // Controla todo o movimento em L
+
+        while (movimento--){
+            for (int i = 0; i < 2; i++) {
+                printf("Baixo\n"); // Imprime a linha vertical
+            }
+            printf("Esquerda\n"); // Imprime a linha horizontal
+        }
+        printf("\n");   
 
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
