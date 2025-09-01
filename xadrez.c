@@ -97,8 +97,17 @@ void moverRainha(int casas) { // Recursividade da Rainha
         printf("\n");
 
         printf("Movimento do Cavalo\n");
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+        // Movendo o Cavalo 02 casas para cima e 01 casa para direita
+
+        int movimento = 1; // Controla todo o movimento em L
+
+        while (movimento--){
+            for (int i = 0; i < 2; i++) {
+                printf("Cima\n"); // Imprime a linha vertical
+            }
+            printf("Direita\n"); // Imprime a linha horizontal
+        }
+        printf("\n");
 
     return 0;
 
