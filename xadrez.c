@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(){
+int main() {
     // Nível Novato - Movimentação das Peças
 
     printf("Desafio de Xadrez - MateCheck\n");
@@ -18,16 +18,16 @@ int main(){
         printf("\n");    
     // Implementação de Movimentação da Torre com While
     printf("Movimento da Torre\n");
-        int i = 0;
+        int j = 0;
 
-       while (i < 5) {
+       while (j < 5) {
         printf("Direita\n");
-        i++;
+        j++;
     }
         printf("\n");    
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+    // Implementação de Movimentação da Rainha com For
+    
 
 
 
