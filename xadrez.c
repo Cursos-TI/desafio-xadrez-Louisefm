@@ -2,35 +2,39 @@
 
 int main() {
     // Nível Novato - Movimentação das Peças
+    int i = 0;
+    int j = 0;
 
     printf("Desafio de Xadrez - MateCheck\n");
     printf("\n");
 
     // Implementação de Movimentação do Bispo com Do-While
     printf("Movimento do Bispo\n");
-       int i = 0;
-
+    // Movendo o Bispo 05 casas na diagonal para direita
+       
        do {
-        printf("Cima e Direita\n"); 
+        printf("Cima e Direita\n"); // Imprime a direção do movimento
         i++;
         } while (i < 5);
 
         printf("\n");    
     // Implementação de Movimentação da Torre com While
     printf("Movimento da Torre\n");
-        int j = 0;
-
+    // Movendo a Torre 05 casas para direita
+        
        while (j < 5) {
-        printf("Direita\n");
+        printf("Direita\n"); // Imprime a direção do movimento
         j++;
     }
         printf("\n");    
 
     // Implementação de Movimentação da Rainha com For
-    
-
-
-
+    printf("Movimento da Rainha\n");
+    // Movendo a Rainha 08 casas para esquerda
+    for(int i = 0; i < 8; i++){
+        printf("Esquerda\n"); // Imprime a direção do movimento
+    }
+    printf("\n");   
 
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
