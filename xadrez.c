@@ -1,11 +1,16 @@
 #include <stdio.h>
 
-void moverBispo(int casas) {  // Recursividade Bispo
+void moverBispo(int casas) {  // Recursividade do Bispo
     if (casas > 0) {
-        printf("Diagonal (cima-direita)\n");
+        for (int i = 0; i < 1; i++) {      // Loops aninhados
+            for (int j = 0; j < 1; j++) {   
+        
+        printf("Diagonal (cima, direita)\n");
         moverBispo(casas - 1);
         }
     }
+}
+}
 void moverTorre(int casas) {  // Recursividade da Torre
     if (casas > 0){
         printf("Direita\n");
@@ -34,11 +39,12 @@ void moverRainha(int casas) { // Recursividade da Rainha
     // Movendo o Bispo 05 casas na diagonal para direita
        
        do {
-        printf("Cima e Direita\n"); // Imprime a direção do movimento
+        printf("Diagonal (cima, direita)\n"); // Imprime a direção do movimento
         i++;
         } while (i < 5);
 
-        printf("\n");    
+        printf("\n"); 
+
     // Implementação de Movimentação da Torre com While
     printf("Movimento da Torre\n");
     // Movendo a Torre 05 casas para direita
@@ -72,43 +78,35 @@ void moverRainha(int casas) { // Recursividade da Rainha
         printf("\n");   
 
     // Nível Mestre - Funções Recursivas e Loops Aninhados
-        printf("Movimento do Bispo\n");
-    // Movendo o Bispo 05 casas na diagonal para direita
-       int casas = 5;
 
-        for (int i = 0; i < casas; i ++){
-            for (int j = 0; j < casas; j ++)
-            {
-                printf("Movendo para Cima\n"); // Imprime a linha vertical
-            }
-            printf("Movendo para Direita\n"); // Imprime a linha horizontal
-        }
+        printf("Movimento do Bispo\n");   // Recursividade do Bispo, move a peça 05 casas para cima e a direita.
+        moverBispo(5);
 
         printf("\n");
 
-        printf("Movimento da Torre\n");
+        printf("Movimento da Torre\n"); // Recursividade da Torre, move a peça 05 casas para a direita.
         moverTorre(5);
 
         printf("\n");
 
-        printf("Movimento da Rainha\n");
+        printf("Movimento da Rainha\n"); // Recursividade da Rainha, move a peça 08 casas para a esquerda.
         moverRainha(8);
 
         printf("\n");
 
-        printf("Movimento do Cavalo\n");
-        // Movendo o Cavalo 02 casas para cima e 01 casa para direita
+        printf("Movimento do Cavalo\n");  // Movendo o Cavalo 02 casas para cima e 01 casa para direita
 
-        int movimento = 1; // Controla todo o movimento em L
-
-        while (movimento--){
-            for (int i = 0; i < 2; i++) {
-                printf("Cima\n"); // Imprime a linha vertical
-            }
-            printf("Direita\n"); // Imprime a linha horizontal
+        for (int i = 0; i < 2; i++) { // Loop externo controlando "Cima"
+        for (int j = 0; j < 1; j++) { // Loop interno apenas para demonstrar aninhamento
+            printf("Cima\n");
         }
+    }
+    // Após os dois "Cima", imprimi "Direita" com outra combinação
+    for (int x = 1, y = 0; y < 1; x++, y++) {
+        printf("Direita\n");
+    }   
         printf("\n");
 
-    return 0;
+        return 0;
 
     }
