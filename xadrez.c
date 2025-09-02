@@ -5,7 +5,7 @@ void moverBispo(int casas) {  // Recursividade do Bispo
         for (int i = 0; i < 1; i++) {      // Loops aninhados
             for (int j = 0; j < 1; j++) {   
         
-        printf("Diagonal (cima, direita)\n");
+        printf("Cima, Direita)\n");
         moverBispo(casas - 1);
         }
     }
@@ -39,7 +39,7 @@ void moverRainha(int casas) { // Recursividade da Rainha
     // Movendo o Bispo 05 casas na diagonal para direita
        
        do {
-        printf("Diagonal (cima, direita)\n"); // Imprime a direção do movimento
+        printf("Cima, Direita)\n"); // Imprime a direção do movimento
         i++;
         } while (i < 5);
 
